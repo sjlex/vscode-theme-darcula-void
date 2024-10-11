@@ -1,0 +1,48 @@
+name: 'Changesets'
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+
+concurrency:
+  group: '${{ github.workflow }}-${{ github.ref }}'
+
+permissions: { } # disable permissions
+
+jobs:
+  changesets:
+    if: github.repository == 'sjlex/vscode-theme-darcula-void'
+    runs-on: 'ubuntu-22.04'
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: 'Checkout Repo'
+        uses: 'actions/checkout@d632683dd7b4114ad314bca15554477dd762a938' # v4.2.0
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: 'Setup Node.js environment'
+        uses: 'actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6' # v4.0.4
+        with:
+          node-version: '22.9.0'
+
+      - name: 'Install Dependencies'
+        run: 'corepack enable && yarn install --immutable'
+
+      - name: 'Create Release Pull Request'
+        uses: 'changesets/action@c8bada60c408975afd1a20b3db81d6eee6789308' # v1.4.9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          createGithubReleases: true
+          commit: 'chore(changesets): 📦 Version packages'
+          version: 'yarn exec changeset version'
+          publish: 'yarn exec changeset tag'

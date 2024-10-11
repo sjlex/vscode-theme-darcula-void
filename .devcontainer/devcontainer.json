@@ -1,0 +1,16 @@
+{
+	"name": "NodeJS-Dev",
+	"build": {
+		"dockerfile": "Dockerfile.dev",
+		"context": ".."
+	},
+	"postCreateCommand": "./bin/task dependencies:dev:install",
+	"remoteUser": "node",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"task.vscode-task"
+			]
+		}
+	}
+}
