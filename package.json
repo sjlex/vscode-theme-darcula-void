@@ -1,0 +1,93 @@
+{
+	"name": "vscode-theme-darcula-void",
+	"version": "0.0.1",
+	"displayName": "Darcula Void",
+	"description": "Theme for Visual Studio Code, based on the Darcula theme from JetBrains IDEs, with a pure black background.",
+	"author": "Sergei Aleksandrov <sergei.a.aleks@gmail.com>",
+	"publisher": "sjlex",
+	"license": "MIT",
+	"homepage": "https://github.com/sjlex/vscode-theme-darcula-void",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sjlex/vscode-theme-darcula-void.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sjlex/vscode-theme-darcula-void/issues"
+	},
+	"packageManager": "yarn@4.5.0",
+	"engines": {
+		"vscode": "^1.93.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"color-theme",
+		"dark",
+		"darcula",
+		"IntelliJ",
+		"JetBrains",
+		"minimal",
+		"clean",
+		"OLED",
+		"black",
+		"void"
+	],
+	"icon": "assets/icon.png",
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Darcula Void",
+				"uiTheme": "vs-dark",
+				"path": "./themes/color-theme.json"
+			}
+		]
+	},
+	"badges": [
+		{
+			"description": "Preview in vscode.dev",
+			"href:": "https://vscode.dev/theme/sjlex.vscode-theme-darcula-void",
+			"url": "https://img.shields.io/badge/preview%20in-vscode.dev-black?labelColor=a8ec21&color=black"
+		},
+		{
+			"description": "Rating",
+			"href:": "https://marketplace.visualstudio.com/items?itemName=sjlex.vscode-theme-darcula-void",
+			"url": "https://img.shields.io/visual-studio-marketplace/r/sjlex.vscode-theme-darcula-void?labelColor=black&color=black"
+		},
+		{
+			"description": "Installs",
+			"href:": "https://marketplace.visualstudio.com/items?itemName=sjlex.vscode-theme-darcula-void",
+			"url": "https://img.shields.io/visual-studio-marketplace/i/sjlex.vscode-theme-darcula-void?labelColor=black&color=black"
+		},
+		{
+			"description": "Downloads",
+			"href:": "https://marketplace.visualstudio.com/items?itemName=sjlex.vscode-theme-darcula-void",
+			"url": "https://img.shields.io/visual-studio-marketplace/d/sjlex.vscode-theme-darcula-void?labelColor=black&color=black"
+		},
+		{
+			"description": "Version",
+			"href:": "https://marketplace.visualstudio.com/items?itemName=sjlex.vscode-theme-darcula-void&ssr=false#version-history",
+			"url": "https://img.shields.io/visual-studio-marketplace/v/sjlex.vscode-theme-darcula-void?labelColor=black&color=black"
+		},
+		{
+			"description": "License",
+			"href:": "https://github.com/sjlex/vscode-theme-darcula-void/blob/main/LICENSE",
+			"url": "https://img.shields.io/github/license/sjlex/vscode-theme-darcula-void?labelColor=black&color=black"
+		}
+	],
+	"devDependencies": {
+		"@changesets/changelog-github": "^0.5.0",
+		"@changesets/cli": "^2.27.9",
+		"@vscode/vsce": "^3.1.1"
+	},
+	"vsce": {
+		"baseImagesUrl": "https://my.custom/base/images/url",
+		"dependencies": false,
+		"yarn": true
+	}
+}

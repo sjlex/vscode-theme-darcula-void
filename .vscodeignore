@@ -1,0 +1,32 @@
+bin
+dist
+design
+
+**/Dockerfile*
+**/.dockerignore
+
+**/.git
+**/.gitignore
+**/.gitattributes
+
+**/.github
+**/.changeset
+**/.devcontainer
+**/.env
+
+.editorconfig
+.vscodeignore
+
+**/.idea
+**/.vscode
+**/.vscode-test/**
+**/npm-debug.log
+
+### Yarn 4
+.yarn
+.yarnrc.*
+.pnp.*
+
+### Taskfile
+./bin/task
+Taskfile.*

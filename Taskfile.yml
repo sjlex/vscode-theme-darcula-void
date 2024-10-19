@@ -1,0 +1,118 @@
+version: "3"
+
+env:
+  PACKAGE_VERSION:
+    sh: |
+      grep -o '"version": "[^"]*"' package.json | sed 's/"version": "\(.*\)"/\1/'
+
+vars:
+  BUILD_PATH: "./dist"
+
+  PACKAGE_NAME: "vscode-theme-darcula-void"
+  PACKAGE_PATH: "{{.BUILD_PATH}}/{{.PACKAGE_NAME}}_v{{.PACKAGE_VERSION}}.vsix"
+
+  WORKSPACE_DIR: "/workspaces/{{.PACKAGE_NAME}}"
+
+  DOCKER_IMAGE: "{{.PACKAGE_NAME}}:{{.PACKAGE_VERSION}}"
+  DOCKERFILE_PATH: "./Dockerfile"
+
+  DEV_DOCKER_IMAGE: "{{.PACKAGE_NAME}}:{{.PACKAGE_VERSION}}-dev"
+  DEV_DOCKERFILE_PATH: ".devcontainer/Dockerfile.dev"
+
+tasks:
+  # ----------------------------------------------------------------------------
+  # Default
+  # ----------------------------------------------------------------------------
+  default:
+    desc: "Show all tasks"
+    cmds:
+      - ./bin/task --list-all
+
+  # ----------------------------------------------------------------------------
+  # Dependencies
+  # ----------------------------------------------------------------------------
+
+  "dependencies:install":
+    desc: "Install dependencies"
+    aliases: ["install"]
+    cmds:
+      - task: "dependencies:dev:install"
+
+  "dependencies:dev:install":
+    desc: "Install dev dependencies"
+    aliases: ["install:dev"]
+    cmds:
+      - yarn install
+        --immutable
+        {{.CLI_ARGS}}
+
+  # ----------------------------------------------------------------------------
+  # Packaging and Publishing
+  # ----------------------------------------------------------------------------
+
+  "pack":
+    desc: "Package VSCode Extension"
+    cmds:
+      - mkdir -p {{.BUILD_PATH}}
+      - yarn exec
+        vsce package
+        --no-dependencies
+        -o {{.PACKAGE_PATH}}
+        {{.CLI_ARGS}}
+
+  "publish":
+    desc: "Publish VSCode Extension"
+    cmds:
+      - yarn exec
+        vsce publish
+        {{.CLI_ARGS}}
+
+  # ----------------------------------------------------------------------------
+  # Changeset
+  # ----------------------------------------------------------------------------
+
+  "changeset":
+    desc: "Run changesets"
+    aliases: ["ch", "cs"]
+    cmds:
+      - yarn exec
+        changeset
+        {{.CLI_ARGS}}
+
+  # ----------------------------------------------------------------------------
+  # Docker
+  # ----------------------------------------------------------------------------
+
+  "docker:run":
+    desc: "Run docker container"
+    cmds:
+      - docker run -it --rm
+        {{.DOCKER_IMAGE}}
+        {{.CLI_ARGS}} || true
+
+  "docker:build":
+    desc: "Build docker image"
+    cmds:
+      - docker buildx build
+        -t {{.DOCKER_IMAGE}}
+        -f {{.DOCKERFILE_PATH}}
+        {{.ROOT_DIR}}
+        {{.CLI_ARGS}}
+
+  "docker:dev:run":
+    desc: "Run dev container"
+    cmds:
+      - docker run -it --rm
+        -v {{.ROOT_DIR}}:{{.WORKSPACE_DIR}}
+        -w {{.WORKSPACE_DIR}}
+        {{.DEV_DOCKER_IMAGE}}
+        {{.CLI_ARGS}} || true
+
+  "docker:dev:build":
+    desc: "Build dev image"
+    cmds:
+      - docker buildx build
+        -t {{.DEV_DOCKER_IMAGE}}
+        -f {{.DEV_DOCKERFILE_PATH}}
+        {{.ROOT_DIR}}
+        {{.CLI_ARGS}}
