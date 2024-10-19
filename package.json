@@ -1,6 +1,6 @@
 {
 	"name": "vscode-theme-darcula-void",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"displayName": "Darcula Void",
 	"description": "Theme for Visual Studio Code, based on the Darcula theme from JetBrains IDEs, with a pure black background.",
 	"author": "Sergei Aleksandrov <sergei.a.aleks@gmail.com>",
