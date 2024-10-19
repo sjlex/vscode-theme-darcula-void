@@ -1,5 +1,11 @@
 # vscode-theme-darcula-void
 
+## 1.0.1
+
+### Patch Changes
+
+- [#3](https://github.com/sjlex/vscode-theme-darcula-void/pull/3) [`bc9d3b3`](https://github.com/sjlex/vscode-theme-darcula-void/commit/bc9d3b3710ec01b143a95f3186982b211b16bda8) Thanks [@sjlex](https://github.com/sjlex)! - Fixed Readme links.
+
 ## 1.0.0
 
 ### Major Changes
