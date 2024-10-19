@@ -50,24 +50,24 @@
 	},
 	"badges": [
 		{
-			"description": "Version",
-			"href:": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
-			"url": "https://vsmarketplacebadges.dev/version-short/sjlex.vscode-theme-darcula-void.svg"
+			"url": "https://vsmarketplacebadges.dev/version-short/sjlex.vscode-theme-darcula-void.svg",
+			"href": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
+			"description": "Version"
 		},
 		{
-			"description": "Installs",
-			"href:": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
-			"url": "https://vsmarketplacebadges.dev/installs-short/sjlex.vscode-theme-darcula-void.svg"
+			"url": "https://vsmarketplacebadges.dev/installs-short/sjlex.vscode-theme-darcula-void.svg",
+			"href": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
+			"description": "Installs"
 		},
 		{
-			"description": "Downloads",
-			"href:": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
-			"url": "https://vsmarketplacebadges.dev/downloads-short/sjlex.vscode-theme-darcula-void.svg"
+			"url": "https://vsmarketplacebadges.dev/downloads-short/sjlex.vscode-theme-darcula-void.svg",
+			"href": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
+			"description": "Downloads"
 		},
 		{
-			"description": "Rating",
-			"href:": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
-			"url": "https://vsmarketplacebadges.dev/rating-short/sjlex.vscode-theme-darcula-void.svg"
+			"url": "https://vsmarketplacebadges.dev/rating-short/sjlex.vscode-theme-darcula-void.svg",
+			"href": "https://marketplace.visualstudio.com/items/sjlex.vscode-theme-darcula-void",
+			"description": "Rating"
 		}
 	],
 	"devDependencies": {
@@ -76,7 +76,8 @@
 		"@vscode/vsce": "^3.1.1"
 	},
 	"vsce": {
-		"baseImagesUrl": "https://my.custom/base/images/url",
+		"baseImagesUrl": "https://github.com/sjlex/vscode-theme-darcula-void/raw/main",
+		"baseContentUrl": "https://github.com/sjlex/vscode-theme-darcula-void",
 		"dependencies": false,
 		"yarn": true
 	}

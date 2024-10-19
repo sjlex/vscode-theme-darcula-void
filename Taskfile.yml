@@ -56,7 +56,6 @@ tasks:
       - mkdir -p {{.BUILD_PATH}}
       - yarn exec
         vsce package
-        --no-dependencies
         -o {{.PACKAGE_PATH}}
         {{.CLI_ARGS}}
 
