@@ -1,5 +1,11 @@
 # vscode-theme-darcula-void
 
+## 1.0.4
+
+### Patch Changes
+
+- [#9](https://github.com/sjlex/vscode-theme-darcula-void/pull/9) [`402b000`](https://github.com/sjlex/vscode-theme-darcula-void/commit/402b000259b8a85d2a39871a4f9702b004bff7e9) Thanks [@sjlex](https://github.com/sjlex)! - Fixed `statusBar.noFolderBackground` color.
+
 ## 1.0.3
 
 ### Patch Changes
