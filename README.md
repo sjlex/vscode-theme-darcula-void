@@ -1,6 +1,6 @@
 <h3 id="darcula-void" align="center">
   <br>
-    <img src="assets/icon.png" alt="logo" width="150">
+    <img src="assets/logo.png" alt="Darcula-Void Logo" width="160">
   <br>
   Darcula Void
   <br>
@@ -21,7 +21,7 @@
   <a href="https://github.com/sjlex/vscode-theme-darcula-void/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/sjlex/vscode-theme-darcula-void?labelColor=black&color=black"></a>&nbsp;
 </p>
 
-![Screenshot](design/screenshot.png)
+![Screenshot](assets/screenshot.png)
 
 ## Table of contents
 
@@ -35,6 +35,7 @@
     - [Icon Themes](#icon-themes)
   - [Inspiration](#inspiration)
   - [License](#license)
+  - [Third-Party Assets](#third-party-assets)
 
 ## Getting started
 
@@ -94,3 +95,19 @@ You can install one of&nbsp;the Icon Themes below:
 ## License
 
 [MIT License](LICENSE)
+
+## Third-Party Assets
+
+This project may include or reference third-party assets under their own licenses. Any such assets are used in accordance with their licensing terms.
+
+- [Anan Darcula Theme](https://marketplace.visualstudio.com/items?itemName=Anan.jetbrains-darcula-theme)
+  - Source: [Anan Darcula Theme](https://github.com/Mohamed3nan/jetbrains-darcula-theme)
+  - License: [MIT License](https://github.com/Mohamed3nan/jetbrains-darcula-theme/blob/master/LICENSE.txt)
+
+- [JetBrains Darcula Theme](https://github.com/JetBrains/intellij-community/)
+  - Source: [JetBrains Darcula Theme](https://github.com/JetBrains/intellij-community/)
+  - License: [Apache License 2.0](https://github.com/JetBrains/intellij-community/blob/master/LICENSE.txt)
+
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+  - Source: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
+  - License: [SIL Open Font License 1.1](https://fonts.google.com/specimen/JetBrains+Mono/license)

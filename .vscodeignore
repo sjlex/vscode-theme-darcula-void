@@ -2,6 +2,8 @@ bin
 dist
 design
 
+assets/screenshot.png
+
 **/Dockerfile*
 **/.dockerignore
 
@@ -28,5 +30,4 @@ design
 .pnp.*
 
 ### Taskfile
-./bin/task
 Taskfile.*
