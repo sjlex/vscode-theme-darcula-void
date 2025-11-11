@@ -35,6 +35,7 @@
     - [Icon Themes](#icon-themes)
   - [Inspiration](#inspiration)
   - [License](#license)
+  - [Third-Party Assets](#third-party-assets)
 
 ## Getting started
 
@@ -94,3 +95,19 @@ You can install one of&nbsp;the Icon Themes below:
 ## License
 
 [MIT License](LICENSE)
+
+## Third-Party Assets
+
+This project may include or reference third-party assets under their own licenses. Any such assets are used in accordance with their licensing terms.
+
+- [Anan Darcula Theme](https://marketplace.visualstudio.com/items?itemName=Anan.jetbrains-darcula-theme)
+  - Source: [Anan Darcula Theme](https://github.com/Mohamed3nan/jetbrains-darcula-theme)
+  - License: [MIT License](https://github.com/Mohamed3nan/jetbrains-darcula-theme/blob/master/LICENSE.txt)
+
+- [JetBrains Darcula Theme](https://github.com/JetBrains/intellij-community/)
+  - Source: [JetBrains Darcula Theme](https://github.com/JetBrains/intellij-community/)
+  - License: [Apache License 2.0](https://github.com/JetBrains/intellij-community/blob/master/LICENSE.txt)
+
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+  - Source: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
+  - License: [SIL Open Font License 1.1](https://fonts.google.com/specimen/JetBrains+Mono/license)
