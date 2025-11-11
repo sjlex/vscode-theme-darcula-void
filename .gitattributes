@@ -4,8 +4,6 @@
 
 *.png binary
 
-bin/task binary
-
 .gitattributes export-ignore
 .gitignore export-ignore
 

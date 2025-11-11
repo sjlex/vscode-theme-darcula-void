@@ -26,7 +26,7 @@ tasks:
   default:
     desc: "Show all tasks"
     cmds:
-      - ./bin/task --list-all
+      - task --list-all
 
   # ----------------------------------------------------------------------------
   # Dependencies

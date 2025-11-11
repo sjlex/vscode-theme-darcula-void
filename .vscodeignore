@@ -30,5 +30,4 @@ assets/screenshot.png
 .pnp.*
 
 ### Taskfile
-./bin/task
 Taskfile.*
