@@ -1,5 +1,21 @@
 # vscode-theme-darcula-void
 
+## 1.1.0
+
+### Minor Changes
+
+- [#12](https://github.com/sjlex/vscode-theme-darcula-void/pull/12) [`0c3a60e`](https://github.com/sjlex/vscode-theme-darcula-void/commit/0c3a60ea18e48db6338914c91f638de7cd752762) Thanks [@sjlex](https://github.com/sjlex)! - Docs: Add Third-Party Assets section to README
+
+### Patch Changes
+
+- [#12](https://github.com/sjlex/vscode-theme-darcula-void/pull/12) [`71aaa2d`](https://github.com/sjlex/vscode-theme-darcula-void/commit/71aaa2d803bf758feaf978a5048fc79d1f94c000) Thanks [@sjlex](https://github.com/sjlex)! - Update logo to SVG format
+
+- [#11](https://github.com/sjlex/vscode-theme-darcula-void/pull/11) [`835298c`](https://github.com/sjlex/vscode-theme-darcula-void/commit/835298c40e0ce115f41b41aa3d004b020690d5f5) Thanks [@sjlex](https://github.com/sjlex)! - Correct text color contrast for button labels.
+
+- [#11](https://github.com/sjlex/vscode-theme-darcula-void/pull/11) [`ff83b18`](https://github.com/sjlex/vscode-theme-darcula-void/commit/ff83b1828f9fc2c5e90252bdd5a964bb27469ee8) Thanks [@sjlex](https://github.com/sjlex)! - Improve Git history graph colors.
+
+- [#12](https://github.com/sjlex/vscode-theme-darcula-void/pull/12) [`82d5910`](https://github.com/sjlex/vscode-theme-darcula-void/commit/82d5910698c2fa5ede01f794e325504a4b718995) Thanks [@sjlex](https://github.com/sjlex)! - Remove task executable from bin
+
 ## 1.0.4
 
 ### Patch Changes
