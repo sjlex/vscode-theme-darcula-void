@@ -2,7 +2,6 @@
 
 *.sh text eol=lf
 
-*.ai binary
 *.png binary
 
 bin/task binary

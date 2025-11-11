@@ -1,6 +1,6 @@
 <h3 id="darcula-void" align="center">
   <br>
-    <img src="assets/icon.png" alt="logo" width="150">
+    <img src="assets/logo.png" alt="Darcula-Void Logo" width="160">
   <br>
   Darcula Void
   <br>
@@ -21,7 +21,7 @@
   <a href="https://github.com/sjlex/vscode-theme-darcula-void/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/sjlex/vscode-theme-darcula-void?labelColor=black&color=black"></a>&nbsp;
 </p>
 
-![Screenshot](design/screenshot.png)
+![Screenshot](assets/screenshot.png)
 
 ## Table of contents
 
